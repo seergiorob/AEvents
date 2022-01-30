@@ -4,7 +4,7 @@ inputSearch.addEventListener("keyup", search)
 
 function search(event){
     var val = event.target.value
-    var datos = data.filter(evento => evento.name.toLowerCase().includes(val.toLowerCase()))
+    var datos = data.filter(category => category.name.toLowerCase().includes(val.toLowerCase()))
 
 
 displayCard(datos)
@@ -30,7 +30,7 @@ function displayCard(datos){
           <h2 class="font-bold text-lg mb-2 ">${eventito.name}</h2>
           
           <p class="text-sm text-gray-600">${eventito.description}</p>
-          <p class="text-sm text-gray-600">${eventito.price}</p>
+          <p class="text-sm text-gray-600">Precio:${eventito.price}</p>
           </div>
           
           </div>
