@@ -15,10 +15,10 @@
       </a>
       <div class="flex md:order-2">
           <div class=" relative mr-3 md:mr-0 md:block">
-            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <!-- <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
               <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-            </div>
-            <input type="text" id="searchInput" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-pink-600 focus:border-pink-600" placeholder="Buscar evento...">
+            </div> -->
+            <!-- <input type="text" id="searchInput" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-pink-600 focus:border-pink-600" placeholder="Search..."> -->
           </div>
           <button data-collapse-toggle="mobile-menu-3" type="button" id="boton" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-3" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -29,7 +29,7 @@
       <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-3">
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-pink-600 rounded md:bg-transparent md:text-pink-600 md:p-0" aria-current="page">Home</a>
+            <a href="./index.html" class="block py-2 pr-4 pl-3 text-gray-700  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0" aria-current="page">Home</a>
           </li>
           <li>
             <a href="./proximoseventos.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Eventos Futuros</a>
@@ -38,88 +38,54 @@
             <a href="./eventospasados.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Eventos Pasados</a>
           </li>
           <li>
-            <a href="./registro.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Registro</a>
+            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-pink-600 rounded md:bg-transparent md:text-pink-600 md:p-0">Registro</a>
           </li>
         </ul>
       </div>
       </div>
     </nav>
 
-    <!-- hero -->
-    <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-      <div class="w-full lg:w-1/2">
-          <div class="lg:max-w-lg">
-              <h1 class="text-3xl font-bold tracking-wide text-gray-800">
-                  Creadores de experiencias.
-              </h1>
-              
-              <div class="mt-8 space-y-5">
-                  <p class="flex items-center -mx-2 text-gray-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
 
-                      <span class="mx-2">Shows exclusivos.</span>
-                  </p>
 
-                  <p class="flex items-center -mx-2 text-gray-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
 
-                      <span class="mx-2">Producciones especiales.</span>
-                  </p>
-
-                  <p class="flex items-center -mx-2 text-gray-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-
-                      <span class="mx-2">Eventos deportivos.</span>
-                  </p>
-              </div>
+    <div class="w-3/5 mx-auto mt-10">
+    <form>
+        <div class="mb-6">
+          <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Nombre Completo:</label>
+          <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Ingrese su Nombre y Apellido" required>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900">E-mail:</label>
+          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="prueba@aevents.com" required>
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
+          <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+        </div>
+        <div class="mb-6">
+          <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900">Confirmar Password</label>
+          <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+        </div>
+        <div class="mb-6">
+        <label for="countries" class="block text-sm font-medium text-gray-900">Tipo de Usuario:</label>
+        <select id="countries" class="bg-gray-50 mb-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        <option>Estudiante</option>
+        <option>Docente</option>
+        <option>Otro</option>
+        </select>
+        </div>
+        <div class="flex items-start mb-6">
+          <div class="flex items-center h-5">
+            <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300" required>
           </div>
-
-          <div class="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm focus-within:border-pink-400 focus-within:ring focus-within:ring-pink-300  focus-within:ring-opacity-40">
-              <form class="flex flex-col lg:flex-row">
-                  <input type="email" placeholder="Ingresa tu e-mail." class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none focus:outline-none focus:placeholder-transparent focus:ring-0" /> 
-                  
-                  <button type="button" class="h-10 px-2 py-2 m-1 text-white transition-colors duration-200 transform bg-pink-600 rounded-md hover:bg-pink-600 focus:outline-none focus:bg-pink-200">
-                      Contactanos
-                  </button>
-              </form>
+          <div class="ml-3 text-sm">
+            <label for="terms" class="font-medium text-gray-900">I agree with the <a href="#" class="text-pink-600 hover:underline">terms and conditions</a></label>
           </div>
+        </div>
+        <button type="submit" class="text-white bg-pink-600 hover:bg-white hover:text-black hover:ring-4 hover:ring-pink-600 focus:ring-4 focus:ring-pink-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Registrarse</button>
+      </form>
       </div>
-      <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
-          <img class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="./assets/jade-masri-74tlEYKgrBE-unsplash.jpg" alt="event photo">
-      </div>
-  </div>
-</section>
 
-
-
-    <div class="bg-gray-100 w-full flex flex-col justify-center items-center m-8" id="filters">
-
-      <!-- <input class="p-2 rounded-xl mb-8" type="text"  id="searchInput" placeholder="Buscar Evento"> -->
-
-      <div id="checkboxCategory"> </div>
-    </div>
-    
-    <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center m-8" id="mainCards">
-
-        <!-- <div  class="w-60 h-[24rem] p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-          
-          <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="./assets/" alt="">
-          <div class="p-2">
-          
-          <h2 class="font-bold text-lg mb-2 ">Parque Juracico</h2>
-          
-          <p class="text-sm text-gray-600">Descripción:</p>
-          <p class="text-sm text-gray-600">Price:</p>
-          </div>
-          
-        </div> -->
-      </div>
       <footer class="relative bg-blueGray-200 pt-8 pb-6">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap text-left lg:text-left">
@@ -169,6 +135,5 @@
         </div>
       </footer>
 <script src="./boton.js"></script>
-<script src="./app.js"></script>
-  </body>
+</body>
 </html>
