@@ -44,26 +44,30 @@
       </div>
       </div>
     </nav>
-    <div class="lg:px-20 md:px-6 px-4 md:py-12 py-8">
-      
-        <div class="lg:flex items-center justify-between">
-          <div class="lg:w-1/3">
-            <h1 class="text-4xl font-semibold leading-9 text-gray-800">Título detalle de evento.</h1>
-            <p class="text-base leading-6 mt-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum maiores obcaecati omnis quam! Pariatur veniam iste nisi atque alias?</p>
-            
-          </div>
-          <div class="lg:w-7/12 lg:mt-0 mt-8">
-            <div class="w-full h-full bg-red-200">
-              <img src="./assets/avengers-heroes-endgame-papel-pintado-2560x1080_14.jpg" alt="apartment design" class="w-full sm:block hidden" />
-              <img src="./assets/metallica.jpg" alt="apartment design" class="sm:hidden block w-full" />
-            </div>
-            <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 lg:gap-8 gap-6 lg:mt-8 md:mt-6 mt-4">
-              <img src="./assets/jade-masri-74tlEYKgrBE-unsplash.jpg" class="w-full" alt="kitchen" />
-              <img src="./assets/pexels-wolfgang-2747449.jpg" class="w-full" alt="sitting room" />
-            </div>
-          </div>
+    
+    <div class="container mx-auto my-5 " id="mainCards">
+
+      <div class="md:flex shadow-lg  mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-64">
+        <img class="h-full w-full md:w-1/3  object-cover rounded-lg rounded-r-none pb-5/6" src="./img/{eventoSeleccionado.image}" alt="bag">
+        <div class="w-full md:w-2/3 px-4 py-4 bg-white rounded-lg">
+           <div class="flex items-center">
+              <h2 class="text-xl text-gray-800 font-medium mr-auto">${eventoSeleccionado.name}</h2>
+              <p class="text-gray-800 font-semibold tracking-tighter">
+                 only $
+                 
+                 ${eventoSeleccionado.price}
+              </p>
+           </div>
+           <p class="text-sm text-gray-700 mt-4">
+            ${eventoSeleccionado.description}
+           </p>
+           <div class="flex items-center justify-end mt-4 top-auto">
+              <p>Categoría: ${category}</p>
+           </div>
         </div>
-      </div>
+     </div>
+
+  </div>
   
 
     <div class="w-3/5 mx-auto mt-10">
@@ -120,5 +124,6 @@
         </div>
       </footer>
 <script src="./js/boton.js"></script>
+<script src="./js/details.js"></script>
 </body>
 </html>
