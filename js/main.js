@@ -1,5 +1,5 @@
 async function getData() {
-    var respuesta = await fetch("./data.json")
+    var respuesta = await fetch("https://amazingeventsapi.herokuapp.com/api/eventos")
     var data1 = await respuesta.json()
     myProgram(data1.eventos)
 }
@@ -39,7 +39,7 @@ function myProgram(info) {
         <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center m-8" id="mainCards">
         <div class="w-60 h-[24rem] p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col justify-between">
           <div>
-          <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="./img/${eventito.image}" alt="">
+          <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="${eventito.image}" alt="">
           <div class="p-2">
           
           <h2 class="font-bold text-lg mb-2 ">${eventito.name}</h2>

@@ -16,7 +16,7 @@ console.log(porcentajeAsisPorCategoria)
 
 getData();
 async function getData() {
-  await fetch("./data.json")
+  await fetch("https://amazingeventsapi.herokuapp.com/api/eventos")
     .then((promise) => promise.json())
     .then((datos) => {
       fechaActual = datos.fechaActual;
