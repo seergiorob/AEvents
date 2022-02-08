@@ -42,7 +42,7 @@ async function getData(){
         Capacidad: ${eventoSeleccionado.capacity}
        </p>
        <p class="text-sm text-gray-700 mt-4">
-        Asistencia: ${eventoSeleccionado.assistance}
+        Asistencia: ${eventoSeleccionado.assistance} || ${eventoSeleccionado.estimate}
        </p>
        <div class="flex items-center justify-end mt-4 top-auto">
        <p>${eventoSeleccionado.category}</p>

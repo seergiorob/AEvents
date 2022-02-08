@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 ">
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="#" class="flex">
@@ -15,10 +15,7 @@
       </a>
       <div class="flex md:order-2">
           <div class=" relative mr-3 md:mr-0 md:block">
-            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-              <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-            </div>
-            <input type="text" id="searchInput" class="block p-2 pl-10 pr-0 w-3/4 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 text-sm focus:ring-pink-600 focus:border-pink-600" placeholder="Buscar evento...">
+            
           </div>
           <button data-collapse-toggle="mobile-menu-3" type="button" id="boton" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-3" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -29,7 +26,7 @@
       <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-3">
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-pink-600 rounded md:bg-transparent md:text-pink-600 md:p-0" aria-current="page">Home</a>
+            <a href="./index.html" class="block py-2 pr-4 pl-3 text-white bg-pink-600 rounded md:bg-transparent md:text-pink-600 md:p-0" aria-current="page">Home</a>
           </li>
           <li>
             <a href="./proximoseventos.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Eventos Futuros</a>
@@ -38,91 +35,59 @@
             <a href="./eventospasados.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Eventos Pasados</a>
           </li>
           <li>
-            <a href="./registro.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Registro</a>
-          </li>
-          <li>
-            <a href="./adminlog.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Admin</a>
+            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Registro</a>
           </li>
         </ul>
       </div>
       </div>
     </nav>
-
-    <!-- hero -->
-    <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-      <div class="w-full lg:w-1/2">
-          <div class="lg:max-w-lg">
-              <h1 class="text-3xl font-bold tracking-wide text-gray-800">
-                  Creadores de experiencias.
-              </h1>
-              
-              <div class="mt-8 space-y-5">
-                  <p class="flex items-center -mx-2 text-gray-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-
-                      <span class="mx-2">Shows exclusivos.</span>
-                  </p>
-
-                  <p class="flex items-center -mx-2 text-gray-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-
-                      <span class="mx-2">Producciones especiales.</span>
-                  </p>
-
-                  <p class="flex items-center -mx-2 text-gray-700">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-
-                      <span class="mx-2">Eventos deportivos.</span>
-                  </p>
-              </div>
-          </div>
-
-          <div class="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm focus-within:border-pink-400 focus-within:ring focus-within:ring-pink-300  focus-within:ring-opacity-40">
-              <form class="flex flex-col lg:flex-row">
-                  <input type="email" placeholder="Ingresa tu e-mail." class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none focus:outline-none focus:placeholder-transparent focus:ring-0" /> 
-                  
-                  <button type="button" class="h-10 px-2 py-2 m-1 text-white transition-colors duration-200 transform bg-pink-600 rounded-md hover:bg-pink-600 focus:outline-none focus:bg-pink-200">
-                      Contactanos
-                  </button>
-              </form>
-          </div>
-      </div>
-      <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
-          <img class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="./assets/jade-masri-74tlEYKgrBE-unsplash.jpg" alt="event photo">
-      </div>
-  </div>
-</section>
-
-
-
-    <div class="bg-gray-100 w-11/12 flex flex-col justify-center items-center m-8" id="filters">
-
-      <!-- <input class="p-2 rounded-xl mb-8" type="text"  id="searchInput" placeholder="Buscar Evento"> -->
-
-      <div id="checkboxCategory"> </div>
-    </div>
     
-    <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center m-8" id="mainCards">
+    <div class="container mx-auto my-5 " id="estadisticas">
 
-        <!-- <div  class="w-60 h-[24rem] p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-          
-          <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="./assets/" alt="">
-          <div class="p-2">
-          
-          <h2 class="font-bold text-lg mb-2 ">Parque Juracico</h2>
-          
-          <p class="text-sm text-gray-600">Descripción:</p>
-          <p class="text-sm text-gray-600">Price:</p>
+      <!-- login -->
+      <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+          <div>
+            
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Acceder como Admin</h2>
+            
           </div>
-          
-        </div> -->
+          <form class="mt-8 space-y-6" action="#" method="POST">
+            <input type="hidden" name="remember" value="true">
+            <div class="rounded-md shadow-sm -space-y-px">
+              <div>
+                <label for="usuario" class="sr-only">Usuario</label>
+                <input id="usuario" name="usuario" type="text" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Usuario">
+              </div>
+              <div>
+                <label for="password" class="sr-only">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+              </div>
+            </div>
+      
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                <label for="remember-me" class="ml-2 block text-sm text-gray-900"> Recordarme </label>
+              </div>
+            </div>
+      
+            <div>
+              <button onclick="login()" type="button" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                  <!-- Heroicon name: solid/lock-closed -->
+                  <svg class="h-5 w-5 text-pink-500 group-hover:text-pink-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+
+
       <footer class="relative bg-blueGray-200 pt-8 pb-6">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap text-left lg:text-left">
@@ -172,6 +137,6 @@
         </div>
       </footer>
 <script src="./js/boton.js"></script>
-<script src="./js/main.js"></script>
-  </body>
+<script src="./js/login.js"></script>
+</body>
 </html>
