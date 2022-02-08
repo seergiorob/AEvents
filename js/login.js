@@ -5,6 +5,6 @@ function login(){
     pass = document.getElementById("password").value;
 
     if(user == "admin" && pass == "admin"){
-        window.location = "../estadistica2.html";
+        window.location = "./estadistica2.html";
     }
 }
