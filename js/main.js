@@ -1,5 +1,5 @@
 async function getData() {
-    var respuesta = await fetch("https://amazingeventsapi.herokuapp.com/api/eventos")
+    var respuesta = await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     var data1 = await respuesta.json()
     myProgram(data1.eventos)
 }
