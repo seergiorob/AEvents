@@ -16,11 +16,11 @@ console.log(porcentajeAsisPorCategoria)
 
 getData();
 async function getData() {
-  await fetch("https://amazingeventsapi.herokuapp.com/api/eventos")
+  await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then((promise) => promise.json())
     .then((datos) => {
-      fechaActual = datos.fechaActual;
-      arrayDatos.push(...datos.eventos);
+      fechaActual = datos.currentDate;
+      arrayDatos.push(...datos.events);
       mayorMenor();
       mayorCapacidad();
       ingresoPorCategorias();

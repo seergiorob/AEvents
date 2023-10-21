@@ -2,9 +2,9 @@ var dataAevents = []
 
 
 async function getData(){
-    await fetch("https://amazingeventsapi.herokuapp.com/api/eventos")
+    await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then(response => response.json())
-    .then(json => dataAevents.push(...json.eventos))
+    .then(json => dataAevents.push(...json.events))
     
 
 
@@ -15,7 +15,7 @@ async function getData(){
     var eventoSeleccionado = {}
     eventoSeleccionado = dataAevents.find
     (function(eventoSeleccionado){
-        return eventoSeleccionado.id == selectedId
+        return eventoSeleccionado._id == selectedId
     }) 
 
 
@@ -41,9 +41,7 @@ async function getData(){
        <p class="text-sm text-gray-700 mt-4">
         Capacidad: ${eventoSeleccionado.capacity}
        </p>
-       <p class="text-sm text-gray-700 mt-4">
-        Asistencia: ${eventoSeleccionado.assistance} || ${eventoSeleccionado.estimate}
-       </p>
+      
        <div class="flex items-center justify-end mt-4 top-auto">
        <p>${eventoSeleccionado.category}</p>
        </div>

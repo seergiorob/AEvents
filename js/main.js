@@ -1,7 +1,8 @@
 async function getData() {
     var respuesta = await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     var data1 = await respuesta.json()
-    myProgram(data1.eventos)
+    console.log(data1)
+    myProgram(data1.events)
 }
 
 getData()
@@ -50,7 +51,7 @@ function myProgram(info) {
 
           <div class="flex justify-between items-center">
           <p class="text-sm text-gray-600 p-2">Precio: ${eventito.price} u$d</p>
-          <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center"> <a href="./detalle.html?id=${eventito.id}">Ver más</a></span>
+          <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center"> <a href="./detalle.html?id=${eventito._id}">Ver más</a></span>
           </div>
           </div>
           </div>

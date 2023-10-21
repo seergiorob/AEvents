@@ -3,14 +3,12 @@ var fechaActual = ""
 var eventosPasados = []
 
 async function getData(){
-    await fetch("https://amazingeventsapi.herokuapp.com/api/eventos")
+    await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then(response => response.json())
-    .then(json => {dataAevents.push(...json.eventos)
-    fechaActual = json.fechaActual
-    eventosPasados.push(...json.eventos.filter(date => date.date < fechaActual))})
-    console.log(dataAevents)
-    console.log(fechaActual)
-    console.log(eventosPasados)
+    .then(json => {dataAevents.push(...json.events)
+    fechaActual = json.currentDate
+    eventosPasados.push(...json.events.filter(date => date.date < fechaActual))})
+  
 
     displayCard(eventosPasados)
 }
@@ -38,7 +36,7 @@ function displayCard(eventosPasados){
 
           <div class="flex justify-between items-center">
           <p class="text-sm text-gray-600 p-2">Precio: ${eventito.price} u$d</p>
-          <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center"> <a href="./detalle.html?id=${eventito.id}">Ver más</a></span>
+          <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center"> <a href="./detalle.html?id=${eventito._id}">Ver más</a></span>
           </div>
           </div>
           </div>
